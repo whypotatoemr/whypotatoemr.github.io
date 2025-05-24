@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:title" content="🥔Why PotatoEMR">
 <meta property="og:description" content="With the clinician in mind">
+  
   <title>Why PotatoEMR</title>
 <style>
 	.cursor-potato{
@@ -38,7 +39,7 @@ cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' wid
 }
 
 #about{
-    margin-top: 100px;
+    margin-top: clamp(0px, 12vh, 100px)
 }
 
 /* Container query instead of media query */
@@ -80,12 +81,14 @@ cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' wid
       I just want a picture of a god dang hot dog!
     </p>
 
-    <p style="width: 270px; margin-left: 35px; font-size: 14px;">
-      EMR that does what <b>you</b> want.<br>100% Free and Open Source.<br>
-Easy: Simple, Fast, and Boring.<br>
-FHIR + Python (Django, HTMX, Bootstrap).<br>
-An Expirimental Potato :)
-    </p>
+    <div style="width: 270px; margin-left: 35px; font-size: 18px;">EMR that does what <b>you</b> want
+  <ul style="font-size: 13px; list-style-type: disc; padding-left: 10px; margin: 0;">
+    <li>100% Free and Open Source.</li>
+    <li>Easy: Simple, Fast, and Boring.</li>
+    <li>FHIR + Python (Django, HTMX, Bootstrap).</li>
+    <li>An Experimental Potato</li>
+  </ul>
+</div>
   </div>
 </div>
 
