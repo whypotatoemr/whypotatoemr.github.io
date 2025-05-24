@@ -8,19 +8,64 @@
 	.cursor-potato{
 cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='96' viewport='0 0 100 100' style='fill:black;font-size:48px;'><text y='50%'>🥔</text></svg>") 40 48, auto;
 }
+/*    https://projects.verou.me/bubbly/*/
+    .speech-bubble {
+	position: relative;
+	background: #d1c4f7;
+	border-radius: .4em;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: #d1c4f7;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -10px;
+	margin-left: -20px;
+}
 </style>
 </head>
-<body>
+<body style="font-family: Helvetica">
 
 
-      <a style="display: inline-block; padding: 5px;" id="potato-link" href="https://potatoemr.com/" class="cursor-potato">
-	  <p style="margin:0; padding: 0; font-size: min(15vw, 15vh);">PotatoEMR</p>
-	  <p style="margin:0; padding: 0; font-size: min(10vw, 10vh);">click here try now</p>
-  </a>
-<div style="display: inline-block; padding: 5px;">
-      <img style="max-height: 40vh; width: auto;" src="/jpeg.JPG">
-<blockquote>Do I look like I know what a jay peg is?<br>I just want a picture of a god dang hot dog!</blockquote>
+<div style="flex:1 1 300px; display:flex; flex-wrap:wrap; align-items:stretch;">
+  <img src="/jpeg.JPG" alt="Hot Dog" style="max-height:40vh; width:auto; display:block; margin: 0; flex:0 0 auto;">
+
+  <div id="about" style="
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 300px;
+  ">
+    <p style="width:300px; margin-top:min(10vh, 10vw); padding: 4px; font-size:15px; margin-left: 6px;" class="speech-bubble">
+      Do I look like I know what a jay peg is?<br>
+      I just want a picture of a god dang hot dog!
+    </p>
+
+    <p style="width: 270px; margin-left: 20px; font-size: 14px;">
+      EMR that does what <b>you</b> want. 100% Free and Open Source. Easy: Simple, Fast, and Boring. FHIR + Python (Django, HTMX, Bootstrap). An Expirimental Potato :)
+    </p>
+  </div>
 </div>
+
+
+
+
+
+
+
+<a id="potato-link" href="https://potatoemr.com/" class="cursor-potato">
+	  <p style="margin:0; padding: 0; font-size: min(17vw, 17vh);">PotatoEMR</p>
+	  <p style="margin:0; padding: 0; font-size: min(11vw, 11vh);">click here try now</p>
+  </a>
+
+    
     <br>
 <div id="Free"><a href="#Free">Free</a>
 <p>MIT License</p>
@@ -28,10 +73,19 @@ cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' wid
 <div id="Open"><a href="#Open">Open</a>
 <p>sdfopsdfkopdsfokpdospfkokpdsfokpdfsoksdf</p>
 </div>
+<div id="Easy"><a href="#Easy">Easy</a>
+<p>sdfopsdfkopdsfokpdospfkokpdsfokpdfsoksdf</p>
+</div>
 <div id="Simple"><a href="#Simple">Simple</a>
 <p>sdfopsdfkopdsfokpdospfkokpdsfokpdfsoksdf</p>
 </div>
+<div id="Fast"><a href="#Fast">Simple</a>
+<p>sdfopsdfkopdsfokpdospfkokpdsfokpdfsoksdf</p>
+</div>
 <div id="Boring"><a href="#Boring">Boring</a>
+<p>sdfopsdfkopdsfokpdospfkokpdsfokpdfsoksdf</p>
+</div>
+<div id="FHIR"><a href="#FHIR">FHIR</a>
 <p>sdfopsdfkopdsfokpdospfkokpdsfokpdfsoksdf</p>
 </div>
 <div id="Python"><a href="#Python">Python</a>
@@ -43,10 +97,19 @@ cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' wid
 <div id="HTMX"><a href="#HTMX">HTMX</a>
 <p>sdfopsdfkopdsfokpdospfkokpdsfokpdfsoksdf</p>
 </div>
-<div id="Potato"><a href="#Potato">Potato</a>
+<div id="Bootstrap"><a href="#Bootstrap">Bootstrap</a>
+<p>sdfopsdfkopdsfokpdospfkokpdsfokpdfsoksdf</p>
+</div>
+
+<div id="Experiment
+"><a href="#Experiment
+">Experiment
+</a>
 <p>sdfopsdfkopdsfokpdospfkokpdsfokpdfsoksdf</p>
 </div>
 
 
 
-</body></html>
+<div id="Potato"><a href="#Potato">Potato</a>
+<p>sdfopsdfkopdsfokpdospfkokpdsfokpdfsoksdf</p>
+</div></body></html>
