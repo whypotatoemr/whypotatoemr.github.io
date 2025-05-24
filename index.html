@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-	<head>
+<html><head>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='1em' font-size='80'>🥔</text></svg>">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,35 +31,42 @@ cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' wid
 	margin-top: -10px;
 	margin-left: -20px;
 }
-    #about{
-        margin-top: 100px;
-    }
-    @media (max-width: calc(27.4125874vh + 320px){
-  #about {
-    margin-top: 0;
 
-.speech-bubble:after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 0;
-	height: 0;
-	border: 20px solid transparent;
-	border-bottom-color: #d1c4f7;
-	border-top: 0;
-	border-left: 0;
-	margin-left -10px;
-	margin-top: -20px;
+/* Container query setup */
+.flex-container {
+    container-type: inline-size;
 }
-  }
+
+#about{
+    margin-top: 100px;
+}
+
+/* Container query instead of media query */
+@container (max-width: calc(27.4125874126vh + 305px)) {
+    #about {
+        margin-top: 0;
+    }
+
+    .speech-bubble:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border: 20px solid transparent;
+        border-bottom-color: #d1c4f7;
+        border-top: 0;
+        border-left: 0;
+        margin-left: -10px;
+        margin-top: -20px;
+    }
 }
 </style>
 </head>
 <body style="font-family: Helvetica">
 
-
-<div style="flex:1 1 300px; display:flex; flex-wrap:wrap; align-items:stretch;">
+<div class="flex-container" style="flex:1 1 300px; display:flex; flex-wrap:wrap; align-items:stretch;">
   <img src="/jpeg.JPG" alt="Hot Dog" style="max-height:40vh; width:auto; display:block; margin: 0; flex:0 0 auto;">
 
   <div id="about" style="
@@ -83,12 +89,6 @@ An Expirimental Potato :)
   </div>
 </div>
 
-
-
-
-
-
-
 <a id="potato-link" href="https://potatoemr.com/login" class="cursor-potato">
 	  <p style="margin:0; padding: 0; font-size: min(17vw, 17vh);">PotatoEMR</p>
 	  <p style="margin:0; padding: 0; font-size: min(11vw, 11vh);">click here try now</p>
@@ -108,7 +108,7 @@ An Expirimental Potato :)
 <div id="Simple"><a href="#Simple">Simple</a>
 <p>sdfopsdfkopdsfokpdospfkokpdsfokpdfsoksdf</p>
 </div>
-<div id="Fast"><a href="#Fast">Simple</a>
+<div id="Fast"><a href="#Fast">Fast</a>
 <p>sdfopsdfkopdsfokpdospfkokpdsfokpdfsoksdf</p>
 </div>
 <div id="Boring"><a href="#Boring">Boring</a>
@@ -127,21 +127,15 @@ An Expirimental Potato :)
 <p>sdfopsdfkopdsfokpdospfkokpdsfokpdfsoksdf</p>
 </div>
 <div id="Bootstrap"><a href="#Bootstrap">Bootstrap</a>
-<p>sdfopsdfkopdsfokpdospfkokpdsfokpdfsoksdf</p>
+<p>sdfopsdfkopdsfokpdospfkokpdfsoksdf</p>
 </div>
 
-<div id="Experimental
-"><a href="#Experimental
-">Experimental
-</a>
+<div id="Experimental"><a href="#Experimental">Experimental</a>
 <p>sdfopsdfkopdsfokpdospfkokpdsfokpdfsoksdf</p>
 </div>
-
-
 
 <div id="Potato"><a href="#Potato">Potato</a>
 <p>sdfopsdfkopdsfokpdospfkokpdsfokpdfsoksdf</p>
 </div>
-
 
 </body></html>
