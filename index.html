@@ -29,6 +29,29 @@ cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' wid
 	margin-top: -10px;
 	margin-left: -20px;
 }
+    #about{
+        margin-top: 100px;
+    }
+    @media (max-width: 607px) {
+  #about {
+    margin-top: 0;
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-bottom-color: #d1c4f7;
+	border-top: 0;
+	border-left: 0;
+	margin-left -10px;
+	margin-top: -20px;
+}
+  }
+}
 </style>
 </head>
 <body style="font-family: Helvetica">
@@ -43,7 +66,7 @@ cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' wid
     justify-content: space-between;
     flex: 1 1 300px;
   ">
-    <p style="width:fit-content; margin-top:min(10vh, 10vw); padding: 6px; font-size:15px; margin-left: 6px;" class="speech-bubble">
+    <p style="width:fit-content; padding: 6px; font-size:15px; margin-bottom: 0px; margin-left: 6px;" class="speech-bubble">
       Do I look like I know what a jay peg is?<br>
       I just want a picture of a god dang hot dog!
     </p>
@@ -113,4 +136,5 @@ cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' wid
 <div id="Potato"><a href="#Potato">Potato</a>
 <p>sdfopsdfkopdsfokpdospfkokpdsfokpdfsoksdf</p>
 </div>
+
 </body></html>
